@@ -59,8 +59,8 @@ return require("packer").startup(function(use)
     use {'andymass/vim-matchup', opt = true}
 
     -- Explorer
-    use {"kyazdani42/nvim-tree.lua", opt = true}
-    use {"ahmedkhalf/lsp-rooter.nvim", opt = true} -- with this nvim-tree will follow you
+    -- use {"kyazdani42/nvim-tree.lua", opt = true}
+    -- use {"ahmedkhalf/lsp-rooter.nvim", opt = true} -- with this nvim-tree will follow you
     -- TODO remove when open on dir is supported by nvimtree
     use "kevinhwang91/rnvimr"
 
@@ -91,6 +91,8 @@ return require("packer").startup(function(use)
 
 		-- Sane gx for netrw_gx bug
     -- use {"felipec/vim-sanegx"}
+    use {'alpertuna/vim-header'}
+    require_plugin('vim-header')
 
     require_plugin("nvim-lspconfig")
     require_plugin("lspsaga.nvim")
@@ -107,7 +109,7 @@ return require("packer").startup(function(use)
     require_plugin("nvim-treesitter")
     require_plugin("nvim-ts-autotag")
     require_plugin('vim-matchup')
-    require_plugin("nvim-tree.lua")
+    -- require_plugin("nvim-tree.lua")
     require_plugin("gitsigns.nvim")
     require_plugin("git-blame.nvim")
     require_plugin("which-key.nvim")
@@ -119,7 +121,7 @@ return require("packer").startup(function(use)
     require_plugin("nvim-web-devicons")
     require_plugin("galaxyline.nvim")
     require_plugin("barbar.nvim")
-    require_plugin('lsp-rooter.nvim')
+    -- require_plugin('lsp-rooter.nvim')
     require_plugin("TrueZen.nvim")
     require_plugin("nvim-ts-context-commentstring")
 

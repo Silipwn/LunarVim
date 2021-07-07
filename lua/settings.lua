@@ -42,3 +42,20 @@ vim.cmd('filetype plugin on') -- filetype detection
 vim.o.guifont = "FiraCode Nerd Font:h17"
 
 -- vim.o.guifont = "JetBrains\\ Mono\\ Regular\\ Nerd\\ Font\\ Complete"
+-- Persistent undo
+-- Don't forget mkdir folder $HOME/.vim/undo
+vim.cmd("set undofile")
+vim.cmd("set undodir=$HOME/.config/nvim/undo")
+vim.cmd("set undolevels=1000")
+vim.cmd("set undoreload=10000")
+vim.cmd('execute "set colorcolumn=80," . join(range(120,150), ",")')
+
+-- Header
+vim.g.header_field_author = 'silipwn'
+vim.g.header_field_author_email = '(contact at as-hw.in)'
+vim.g.header_field_copyright = 'Finis coronat opus; Run at your own peril @silipwn;' 
+vim.g.header_auto_add_header = 0
+vim.g.header_field_modified_by = 0
+vim.g.header_field_license_id = 'BSD-3-Clause'
+vim.g.header_field_timestamp_format = '%FT%T%z'
+
