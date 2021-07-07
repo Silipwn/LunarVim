@@ -125,6 +125,14 @@ return require("packer").startup(function(use)
     require_plugin("TrueZen.nvim")
     require_plugin("nvim-ts-context-commentstring")
 
+
+    use{'TimUntersberger/neogit',opt = true}
+    require_plugin('neogit')
+    -- folke/lsp-colors.nvim
+    -- simrat39/symbols-outline.nvim
+    use{'sindrets/diffview.nvim',opt = true}
+    require_plugin('diffview.nvim')
+
     -- Extras
     if O.extras then
         use {'metakirby5/codi.vim', opt = true}
@@ -151,9 +159,6 @@ return require("packer").startup(function(use)
         require_plugin('playground')
         -- folke/todo-comments.nvim
         -- gennaro-tedesco/nvim-jqx
-        -- TimUntersberger/neogit
-        -- folke/lsp-colors.nvim
-        -- simrat39/symbols-outline.nvim
 
         -- Git
         -- use {'tpope/vim-fugitive', opt = true}

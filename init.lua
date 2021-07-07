@@ -5,6 +5,7 @@ require('lv-gitblame')
 require('lv-matchup')
 require('plugins')
 require('lv-utils')
+require('lv-diff')
 require('lv-autocommands')
 require('keymappings')
 -- require('lv-nvimtree') -- This plugin must be required somewhere before colorscheme.  Placing it after will break navigation keymappings
