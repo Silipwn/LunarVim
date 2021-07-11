@@ -34,6 +34,7 @@ command! DebugStepOut lua require'dap'.step_out()
 command! DebugStepInto lua require'dap'.step_into()
 command! DebugToggleRepl lua require'dap'.repl.toggle()
 command! DebugGetSession lua require'dap'.session()
+command! DebugStop lua require'dap'.stop()
 
 " Available Debug Adapters:
 "   https://microsoft.github.io/debug-adapter-protocol/implementors/adapters/
@@ -102,3 +103,7 @@ endfunction
 " Special comment
 iab cmtime <c-r>=strftime("# %FT%T%z: <why> : silipwn")<cr>
 
+map <leader>wh :wincmd h<CR>
+map <leader>wj :wincmd j<CR>
+map <leader>wk :wincmd k<CR>
+map <leader>wl :wincmd l<CR>

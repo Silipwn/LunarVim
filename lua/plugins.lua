@@ -47,6 +47,7 @@ return require("packer").startup(function(use)
 
     -- Debugging
     use {"mfussenegger/nvim-dap", opt = true}
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
     -- Autocomplete
     use {"hrsh7th/nvim-compe", opt = true}

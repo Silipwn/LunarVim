@@ -116,7 +116,8 @@ local mappings = {
         i = {"<cmd>DebugStepInto<cr>", "Step Into"},
         o = {"<cmd>DebugStepOver<cr>", "Step Over"},
         r = {"<cmd>DebugToggleRepl<cr>", "Toggle Repl"},
-        s = {"<cmd>DebugStart<cr>", "Start"}
+        s = {"<cmd>DebugStart<cr>", "Start"},
+        q = {"<cmd>DebugStop<cr>", "Stop"}
     },
     g = {
         name = "Git",
@@ -127,6 +128,7 @@ local mappings = {
         R = {"<cmd>ResetBuffer<cr>", "Reset Buffer"},
         s = {"<cmd>StageHunk<cr>", "Stage Hunk"},
         u = {"<cmd>UndoStageHunk<cr>", "Undo Stage Hunk"},
+        g = {"<cmd>Neogit<cr>", "Neogit Status"},
         o = {"<cmd>Telescope git_status<cr>", "Open changed file"},
         b = {"<cmd>Telescope git_branches<cr>", "Checkout branch"},
         c = {"<cmd>Telescope git_commits<cr>", "Checkout commit"},
